@@ -1,3 +1,14 @@
 @import 'tailwindcss';
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --transition-fast: 150ms;
+}
+html {
+  transition: background-color var(--transition-fast) ease, color var(--transition-fast) ease;
+}
